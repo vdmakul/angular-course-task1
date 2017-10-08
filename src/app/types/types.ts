@@ -3,8 +3,6 @@ type TravelSite ={
   'address': string,
   'phone': number,
   'weather': Weather,
-  'followers': number,
-  'following': number,
   'socialInfo': SocialInfo
   'type': string
 }
@@ -19,4 +17,6 @@ type Weather = {
 type SocialInfo = {
   'title': string,
   'img': string,
+  'followers': number,
+  'following': number,
 }
