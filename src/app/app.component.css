@@ -1,0 +1,8 @@
+.element-left {
+  float: left;
+  width:50%;
+}
+.element-right {
+  float: right;
+  width: 35%;
+}
