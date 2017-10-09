@@ -1,0 +1,13 @@
+<div class="activity-row">
+  <div class="activity-desc" (click)="onSelect.emit()">
+    <h5>{{travelSite.address}}</h5>
+    <p>{{travelSite.type}}</p>
+    <h6>{{travelSite.phone | phone}}</h6>
+  </div>
+  <div class="activity-img">
+    <ul>
+      <li><img [src]='travelSite.img' alt=""/></li>
+    </ul>
+  </div>
+  <div class="clear"></div>
+</div>

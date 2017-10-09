@@ -8,6 +8,7 @@ import { SiteSearchComponent } from './site-search/site-search.component';
 import { UniquePipe } from './common/pipes/unique.pipe';
 import { SiteFilterPipe } from './site-search/site-filter.pipe';
 import { PhonePipe } from './common/pipes/phone.pipe';
+import { SiteDescriptionComponent } from './site-description/site-description.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { PhonePipe } from './common/pipes/phone.pipe';
     UniquePipe,
     SiteFilterPipe,
     PhonePipe,
+    SiteDescriptionComponent,
   ],
   imports: [
     BrowserModule
