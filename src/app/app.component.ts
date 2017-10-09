@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  public title: string = 'Not Weather Widget';
+
   public travelSite: TravelSite;
 }
