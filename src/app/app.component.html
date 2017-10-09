@@ -2,11 +2,11 @@
 
 <div class="element">
   <div class="element-left">
-    <app-site-search></app-site-search>
+    <app-site-search (selectedSite)="updateSite($event)"></app-site-search>
   </div>
   <div class="element-right">
-    <app-weather></app-weather>
-    <app-social></app-social>
+    <app-weather [weather]="travelSite?.weather"></app-weather>
+    <app-social [socialInfo]="travelSite?.socialInfo"></app-social>
   </div>
   <div class="clear"></div>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-social',
@@ -7,12 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SocialComponent implements OnInit {
 
-  public socialInfo: SocialInfo = {
-    'title': 'Nam libero voluptatem',
-    'img': 'assets/images/b1.jpg',
-    'followers': 2850,
-    'following': 675,
-  };
+  @Input()
+  public socialInfo: SocialInfo;
 
   constructor() { }
 

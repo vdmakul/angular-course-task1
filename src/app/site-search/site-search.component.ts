@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import { travelSites } from '../data/data';
 
 @Component({
@@ -11,16 +11,20 @@ export class SiteSearchComponent implements OnInit {
 
   public travelSites: TravelSite[] = travelSites;
 
-  public selectedSite: TravelSite;
+  public site: TravelSite;
 
-  public siteClick(site: TravelSite): void {
-    this.selectedSite = site;
+  @Output()
+  public selectedSite: EventEmitter<TravelSite> = new EventEmitter();
+
+  public selectSite(site: TravelSite): void {
+    this.site = site;
+    this.selectedSite.emit(site);
   }
 
   constructor() { }
 
   public ngOnInit() {
-    this.selectedSite = this.travelSites[0];
+    this.selectSite(this.travelSites[0]);
   }
 
 }

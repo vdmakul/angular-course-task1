@@ -1,4 +1,4 @@
-<div class="element-bg-img"><img [src]="selectedSite?.img" alt="" class="img-responsive"></div>
+<div class="element-bg-img"><img [src]="site?.img" alt="" class="img-responsive"></div>
 <div class="element-left-bottom">
   <div class="ele-strip">
     <ul>
@@ -19,7 +19,7 @@
       <div *ngFor="let travelSite of travelSites">
 
         <div class="activity-row">
-          <div class="activity-desc" (click)="siteClick(travelSite)">
+          <div class="activity-desc" (click)="selectSite(travelSite)">
             <h5>{{travelSite.address}}</h5>
             <p>{{travelSite.type}}</p>
             <h6>Tel: {{travelSite.phone}}</h6>

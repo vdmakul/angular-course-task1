@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-weather',
@@ -7,12 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WeatherComponent implements OnInit {
 
-  public weather: Weather = {
-    'title': 'Et harum quidem',
-    'icon': 'assets/images/cloudy.png',
-    'water': 20,
-    'temperature': 30
-  };
+  @Input()
+  public weather: Weather;
 
   constructor() { }
 

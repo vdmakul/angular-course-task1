@@ -24,14 +24,14 @@ export const travelSites: TravelSite[] = [
     'weather': {
       'title': 'Nemo enim ipsam',
       'icon': 'assets/images/cloudy.png',
-      'water': 20,
-      'temperature': 30
+      'water': 4,
+      'temperature': 11
     },
     'socialInfo': {
       'title': 'Excepteur sint occaecat',
       'img': 'assets/images/b2.jpg',
-      'followers': 2850,
-      'following': 675,
+      'followers': 320,
+      'following': 157,
     },
     'type': 'Lighthouse'
   }
