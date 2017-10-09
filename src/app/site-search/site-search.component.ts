@@ -10,6 +10,7 @@ export class SiteSearchComponent implements OnInit {
 
 
   public travelSites: TravelSite[] = travelSites;
+  public types: string[] = travelSites.map(s => s.type);
 
   public site: TravelSite;
 
