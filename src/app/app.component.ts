@@ -7,9 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  public travelSite: TravelSite;
-
-  public updateSite(site: TravelSite): void {
-    this.travelSite = site;
-  }
 }
