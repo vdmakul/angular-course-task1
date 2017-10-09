@@ -5,6 +5,9 @@
         <li *ngFor="let type of types | unique">
           <a href="#" (click)="currentType = type">{{type}}</a>
         </li>
+      <li>
+        <a href="#" (click)="currentType = null">Show ALL</a>
+      </li>
     </ul>
   </div>
 </div>
