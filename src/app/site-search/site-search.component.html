@@ -21,7 +21,7 @@
           <div class="activity-desc" (click)="selectSite(travelSite)">
             <h5>{{travelSite.address}}</h5>
             <p>{{travelSite.type}}</p>
-            <h6>Tel: {{travelSite.phone}}</h6>
+            <h6>{{travelSite.phone | phone}}</h6>
           </div>
           <div class="activity-img">
             <ul>

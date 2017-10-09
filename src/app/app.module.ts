@@ -7,6 +7,7 @@ import { SocialComponent } from './social/social.component';
 import { SiteSearchComponent } from './site-search/site-search.component';
 import { UniquePipe } from './common/pipes/unique.pipe';
 import { SiteFilterPipe } from './site-search/site-filter.pipe';
+import { PhonePipe } from './common/pipes/phone.pipe';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SiteFilterPipe } from './site-search/site-filter.pipe';
     SiteSearchComponent,
     UniquePipe,
     SiteFilterPipe,
+    PhonePipe,
   ],
   imports: [
     BrowserModule

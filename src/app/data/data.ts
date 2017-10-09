@@ -20,7 +20,7 @@ export const travelSites: TravelSite[] = [
   {
     'img': 'assets/images/2.jpg',
     'address': 'Nam libero tempore',
-    'phone': 1285968685,
+    'phone': 128596865,
     'weather': {
       'title': 'Nemo enim ipsam',
       'icon': 'assets/images/cloudy.png',
