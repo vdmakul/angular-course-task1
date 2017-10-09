@@ -6,6 +6,7 @@ import { WeatherComponent } from './weather/weather.component';
 import { SocialComponent } from './social/social.component';
 import { SiteSearchComponent } from './site-search/site-search.component';
 import { UniquePipe } from './common/pipes/unique.pipe';
+import { SiteFilterPipe } from './site-search/site-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { UniquePipe } from './common/pipes/unique.pipe';
     SocialComponent,
     SiteSearchComponent,
     UniquePipe,
+    SiteFilterPipe,
   ],
   imports: [
     BrowserModule

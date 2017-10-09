@@ -15,7 +15,7 @@ export const travelSites: TravelSite[] = [
       'followers': 2850,
       'following': 675,
     },
-    'type': 'Lighthouse'
+    'type': 'Hotel'
   },
   {
     'img': 'assets/images/2.jpg',
