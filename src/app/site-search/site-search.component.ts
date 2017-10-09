@@ -9,23 +9,30 @@ import { travelSites } from '../data/data';
 export class SiteSearchComponent implements OnInit {
 
 
-  public travelSites: TravelSite[] = travelSites;
+  public travelSites: TravelSite[];
   public types: string[] = travelSites.map(s => s.type);
 
-  public site: TravelSite;
+  public selectedSite: TravelSite;
 
   @Output()
-  public selectedSite: EventEmitter<TravelSite> = new EventEmitter();
+  public onSiteSelect: EventEmitter<TravelSite> = new EventEmitter();
 
   public selectSite(site: TravelSite): void {
-    this.site = site;
-    this.selectedSite.emit(site);
+    this.selectedSite = site;
+    this.onSiteSelect.emit(site);
+  }
+
+  public selectType(type: string): void {
+    this.travelSites = travelSites.filter(s => type == null || s.type === type);
+    if (this.travelSites.indexOf(this.selectedSite) < 0) {
+      this.selectSite(null);
+    }
   }
 
   constructor() { }
 
   public ngOnInit() {
-    this.selectSite(this.travelSites[0]);
+    this.selectType(null);
   }
 
 }

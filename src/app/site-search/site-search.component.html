@@ -1,12 +1,12 @@
-<div class="element-bg-img"><img [src]="site?.img" alt="" class="img-responsive"></div>
+<div class="element-bg-img"><img [src]="selectedSite?.img" alt="" class="img-responsive"></div>
 <div class="element-left-bottom">
   <div class="ele-strip">
     <ul>
         <li *ngFor="let type of types | unique">
-          <a href="#" (click)="currentType = type">{{type}}</a>
+          <a href="#" (click)="selectType(type)">{{type}}</a>
         </li>
       <li>
-        <a href="#" (click)="currentType = null">Show ALL</a>
+        <a href="#" (click)="selectType(null)">Show ALL</a>
       </li>
     </ul>
   </div>
@@ -18,7 +18,7 @@
   <div class="activity_box">
     <div class="scrollbar" id="style-2">
 
-      <div *ngFor="let travelSite of travelSites | siteFilter:currentType">
+      <div *ngFor="let travelSite of travelSites">
 
         <app-site-description [travelSite]="travelSite" (onSelect)="selectSite(travelSite)"></app-site-description>
 

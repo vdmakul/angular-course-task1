@@ -2,7 +2,7 @@
 
 <div class="element">
   <div class="element-left">
-    <app-site-search (selectedSite)="travelSite = $event"></app-site-search>
+    <app-site-search (onSiteSelect)="travelSite = $event"></app-site-search>
   </div>
   <div class="element-right">
     <app-weather [weather]="travelSite?.weather"></app-weather>
